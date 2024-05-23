@@ -1,7 +1,8 @@
 # POO
 ## Prueba Subir archivos
-1.- Archivo subido MAIN.java
+1.- Carpeta subida Prueba 1
 
-2.- Archivo subido Main_Prueba.java 
+2.- Carpeta subida Practica1
 
- notas: Sigue siendo dificil los commit´s
+3.- Carpeta subida Herencia (Trabajo individual)
+
