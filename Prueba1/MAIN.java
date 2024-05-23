@@ -1,4 +1,4 @@
-package Clase6;
+package Clase6.Prueba1;
 
 public class MAIN {
     public static void main(String[] args) {
