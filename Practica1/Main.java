@@ -1,4 +1,4 @@
-package Clase6.Practica1;
+package GIT_POO.Practica1;
 
 public class Main {
     public static void main(String[] args){

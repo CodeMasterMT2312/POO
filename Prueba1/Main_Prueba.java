@@ -1,4 +1,4 @@
-package Clase6.Prueba1;
+package GIT_POO.Prueba1;
 
 public class Main_Prueba {
     public static void main(String[] args) {
