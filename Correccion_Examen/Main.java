@@ -1,4 +1,4 @@
-package GIT_POO.Correccion_Examen;
+package Repo_git.Correccion_Examen;
 
 
 //Probando Commits
