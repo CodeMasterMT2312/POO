@@ -4,14 +4,14 @@
    ### Prueba de push y commit
 
 3. Carpeta subida Practica1
-    ### Ejercicio
+    #### Ejercicio
 
 4. Carpeta subida Herencia (Trabajo individual)
-   ### Vehiculos
+   #### Vehiculos
 
 5. Carpeta repositorio remoto Correccion Examen
-     ### Hoteles
+     #### Hoteles
    
 6. Carpeta Ejemplo Herencia
-   ### Jugador-Futbol 
+   #### Jugador-Futbol 
 
