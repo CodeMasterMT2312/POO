@@ -1,5 +1,5 @@
 # POO
-## Prueba Subir archivos
+## Subir archivos
 1. Carpeta subida Prueba 1
    ### Prueba de push y commit
 
