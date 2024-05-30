@@ -1,10 +1,17 @@
 # POO
 ## Prueba Subir archivos
 1. Carpeta subida Prueba 1
+   ### Prueba de push y commit
 
-2. Carpeta subida Practica1
+3. Carpeta subida Practica1
+    ### Ejercicio
 
-3. Carpeta subida Herencia (Trabajo individual)
+4. Carpeta subida Herencia (Trabajo individual)
+   ### Vehiculos
 
-4. Carpeta repositorio remoto Correccion Examen
+5. Carpeta repositorio remoto Correccion Examen
+     ### Hoteles
+   
+6. Carpeta Ejemplo Herencia
+   ### Jugador-Futbol 
 
