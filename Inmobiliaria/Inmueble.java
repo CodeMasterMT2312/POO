@@ -34,6 +34,6 @@ public class Inmueble {
         return tamanio;
     }
 
-    public void MostrarInformacion(){System.out.println("Inmuebles en venta");}
+    public void MostrarInformacion(){System.out.println("Direccion: " + getDireccion() + "\nprecio: "+getPrecio()+"\nNumero de Habitaciones: "+ getNumHabitaciones()+"\nTamaño: " + getTamanio());}
 }
 

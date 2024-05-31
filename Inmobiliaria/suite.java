@@ -13,12 +13,13 @@ public class suite extends Inmueble{
 
     //Getter
 
-    public boolean isTieneJacuzzi() {
+    public boolean getTieneJacuzzi() {
         return TieneJacuzzi;
     }
 
     //Metodo @Override
     public void MostrarInformacion(){
-        System.out.println("Suite en venta");
+        super.MostrarInformacion();
+        System.out.println("Suite en venta\n"+"Tiene Jacuzzi? " + getTieneJacuzzi());
     }
 }
