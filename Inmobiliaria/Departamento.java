@@ -18,7 +18,7 @@ package GIT_POO.Inmobiliaria;
     }
 
     //Metodos
-    //@Override
+    @Override
     public void MostrarInformacion(){
         super.MostrarInformacion();
         System.out.println("Departamento en venta"+"\n Numero de pisos: "+ getNumPiso());

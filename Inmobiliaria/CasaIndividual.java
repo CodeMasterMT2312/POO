@@ -17,7 +17,8 @@ package GIT_POO.Inmobiliaria;
         return TamanioTerreno;
     }
 
-    //Metodo @Override
+    //Metodo
+    @Override
     public void MostrarInformacion(){
         super.MostrarInformacion();
         System.out.println("Casa individual en venta\n"+"Tamaño del terreno:"+getTamanioTerreno());

@@ -17,7 +17,8 @@ public class suite extends Inmueble{
         return TieneJacuzzi;
     }
 
-    //Metodo @Override
+    //Metodo
+    @Override
     public void MostrarInformacion(){
         super.MostrarInformacion();
         System.out.println("Suite en venta\n"+"Tiene Jacuzzi? " + getTieneJacuzzi());
