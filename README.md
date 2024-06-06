@@ -25,5 +25,5 @@
     #### Ejercicio @Override
 
 11. Carpeta Practica
-     #### Ejercicio Override 2
+     #### Ejercicio Override2
 
