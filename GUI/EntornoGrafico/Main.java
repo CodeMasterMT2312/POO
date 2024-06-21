@@ -24,12 +24,12 @@ public class Main {
 
             // Panel 2
             JPanel panel1 = new JPanel();
-            panel1.setLayout(new GridLayout(5,1 ));
+            panel1.setLayout(new GridLayout(5, 1));
             panel1.setBackground(Color.CYAN);
-            JLabel etiqueta1 = new JLabel("Calculos");
+            JLabel etiqueta1 = new JLabel("Numero 1: ");
+            JPanel panelBoton = new JPanel(new FlowLayout(FlowLayout.CENTER));
+            panelBoton.setBackground(Color.CYAN);
             JButton boton = new JButton("Calcular");
-            boton.setSize(50,40);
-            boton.setLocation(50,10);
             JTextField Num1 = new JTextField(4);
             JTextField Num2 = new JTextField(4);
             JTextField Resultado = new JTextField(4);
@@ -37,22 +37,25 @@ public class Main {
             boton.addActionListener(new ActionListener(){
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    int num1 = Integer.parseInt(Num1.getText());
-                    int num2 = Integer.parseInt(Num2.getText());
-                    int suma = num1 + num2;
+                    double num1 = Double.parseDouble(Num1.getText());
+                    double num2 = Double.parseDouble(Num2.getText());
+                    String suma = String.format("%.2f",num1 + num2);
                     Resultado.setText("Resultado: " + suma);
                 }
             });
 
             panel1.add(etiqueta1);
             panel1.add(Num1);
+            panel1.add(new JLabel("Numero2: "));
             panel1.add(Num2);
-            panel1.add(boton);
+            panel1.add(new JLabel("Resultado: "));
             panel1.add(Resultado);
+            panelBoton.add(boton);
+            panel1.add(panelBoton);
 
             // Agregar a los paneles al Frame
-            ventana.getContentPane().add(panel);
-            ventana.getContentPane().add(panel1);
+            ventana.add(panel);
+            ventana.add(panel1);
 
             // Disposicion de los paneles
             ventana.add(panel , BorderLayout.NORTH);
