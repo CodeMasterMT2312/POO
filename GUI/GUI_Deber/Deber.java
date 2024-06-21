@@ -39,7 +39,7 @@ public class Deber extends JFrame{
                     String nombreCompleto = nombre + " " + apellido;
 
                     //Mostrar el resultado en un cuadro de dialogo
-                    JOptionPane.showMessageDialog(null, "Nombre Completo: "+ nombreCompleto);
+                    JOptionPane.showMessageDialog(null, "Nombre Completo: "+ nombreCompleto+"\nTitulo: Tecnologo en Desarrollo de Software");
                 }
             });
 
@@ -54,7 +54,7 @@ public class Deber extends JFrame{
                     if(edadInt > 100){
                         JOptionPane.showMessageDialog(null, "No se puede calcular la fecha de nacimiento");
                     }else{
-                        JOptionPane.showMessageDialog(null, "Fecha de Nacimiento: "+ fechaNacimiento);
+                        JOptionPane.showMessageDialog(null, "Año de Nacimiento: "+ fechaNacimiento);
                     }
                 }
             });
