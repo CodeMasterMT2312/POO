@@ -47,7 +47,7 @@ public class Retiro extends JFrame {
             Double ValorRetirado=(ValorVisto - ValorRetiro);
             cuenta.setSaldo(ValorRetirado);
             JOptionPane.showMessageDialog(null, "Retiro exitoso.");
-            Ver_Saldo.getInstance().VerSaldo(); // Actualizar la ventana Ver_Saldo
+            Ver_Saldo.getInstance(); // Actualizar la ventana Ver_Saldo
         }else{
             JOptionPane.showMessageDialog(null, "No hay suficiente saldo.");
         }

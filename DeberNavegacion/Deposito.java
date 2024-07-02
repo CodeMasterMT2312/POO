@@ -45,7 +45,7 @@ public class Deposito extends JFrame {
             JOptionPane.showMessageDialog(null, "No se puede depositar valores negativos.");
         } else {
             cuenta.depositar(amount); // Ingreso en la cuenta compartida
-            Ver_Saldo.getInstance().VerSaldo(); // Actualizar la ventana Ver_Saldo
+            Ver_Saldo.getInstance(); // Actualizar la ventana Ver_Saldo
             JOptionPane.showMessageDialog(null, "Deposito realizado exitosamente");
         }
     }
