@@ -27,6 +27,7 @@ public class Conexion extends JFrame {
                     String query = "SELECT * FROM cliente;";
                     Statement stmt = conn.createStatement();
                     ResultSet rs = stmt.executeQuery(query);
+
                     while (rs.next()) {
                         //System.out.println(rs.getString("nombre"));
                         //System.out.println(rs.getInt("codigo"));
