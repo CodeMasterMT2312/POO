@@ -51,7 +51,7 @@ public class Menu extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                visualizar();
             }
         });
     }
@@ -62,24 +62,32 @@ public class Menu extends JFrame {
     }
 
     public void visualizar() {
+        StringBuilder message = new StringBuilder();
         try {
             String URL= "jdbc:mysql://ufeg4mxmgr4l8wwv:SOPzhyOD3jM4H3nYzKAE@bkuqtl2o6sqnsc9xe2om-mysql.services.clever-cloud.com:3306/bkuqtl2o6sqnsc9xe2om";
             String userDB="ufeg4mxmgr4l8wwv";
             String password="SOPzhyOD3jM4H3nYzKAE";
 
             Connection conn = DriverManager.getConnection(URL, userDB, password);
-            String query = "UPDATE Registro SET Nombre = ?,Apellido = ? WHERE ID = ?;";
+            String query = "SELECT ID, Nombre, Apellido FROM Registro";
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(query);
+
             while (rs.next()) {
-                int id = rs.getInt("id");
-                String nombre = rs.getString("nombre");
-                System.out.println("ID: " + id + ", Nombre: " + nombre);
+                int id = rs.getInt("ID");
+                String nombre = rs.getString("Nombre");
+                String apellido = rs.getString("Apellido");
+                message.append("ID: ").append(id).append(", Nombre: ").append(nombre).append(", Apellido: ").append(apellido).append("\n");
             }
 
-            conn.close(); //Cerrar conexion a la base de datos
+            conn.close(); //Cerrar conexión a la base de datos
+
         } catch (SQLException ex) {
-            System.out.println("Error al conectar a la base de datos: " + ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al conectar a la base de datos: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            return; // Salir del método si ocurre un error
         }
+
+        // Mostrar el mensaje en un JOptionPane fuera del bloque try-catch
+        JOptionPane.showMessageDialog(null, message.toString(), "Datos de Registro", JOptionPane.INFORMATION_MESSAGE);
     }
 }
